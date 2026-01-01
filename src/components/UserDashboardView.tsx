@@ -561,7 +561,7 @@ export function UserDashboardView({ session, privateKey }: UserDashboardViewProp
                                   onClick={() => { setSelectedContact(chat); setActiveView("chat"); }}
                                 >
                                   <p className="font-black text-sm uppercase italic font-accent hover:text-indigo-400 transition-colors">{chat.username}</p>
-                                  <p className={`text-[8px] font-bold uppercase tracking-widest ${onlineUsers.has(chat.id) ? 'text-emerald-500' : 'text-white/20'}`}>
+                                  <p className={`text-[8px] font-bold uppercase tracking-widest ${onlineUsers.has(chat.id) ? 'text-emerald-500' : 'text-amber-400/80'}`}>
                                     {onlineUsers.has(chat.id) ? 'Online' : formatLastSeen(chat.last_seen)}
                                   </p>
                                 </div>
@@ -597,7 +597,7 @@ export function UserDashboardView({ session, privateKey }: UserDashboardViewProp
                                   >
                                     {p.username}
                                   </p>
-                                  <p className={`text-[6px] font-bold uppercase tracking-widest ${onlineUsers.has(p.id) ? 'text-emerald-500' : 'text-white/20'}`}>
+                                  <p className={`text-[6px] font-bold uppercase tracking-widest ${onlineUsers.has(p.id) ? 'text-emerald-500' : 'text-amber-400/80'}`}>
                                     {onlineUsers.has(p.id) ? 'Online' : formatLastSeen(p.last_seen)}
                                   </p>
                                 </div>
@@ -664,7 +664,7 @@ profiles
                                                 onClick={() => { setSelectedContact(p); if (window.innerWidth < 1024) setActiveView("chat"); }}
                                               >
                                                 <p className="font-black text-lg uppercase italic font-accent hover:text-indigo-400 transition-colors">{p.username}</p>
-                                                <p className={`text-[10px] font-bold uppercase tracking-widest ${onlineUsers.has(p.id) ? 'text-emerald-500' : 'text-white/20'}`}>
+                                                <p className={`text-[10px] font-bold uppercase tracking-widest ${onlineUsers.has(p.id) ? 'text-emerald-500' : 'text-amber-400/80'}`}>
                                                   {onlineUsers.has(p.id) ? 'Online' : formatLastSeen(p.last_seen)}
                                                 </p>
                                               </div>
@@ -714,7 +714,7 @@ profiles
                               >
                                 {p.username}
                               </p>
-                              <p className={`text-[10px] font-bold uppercase tracking-widest ${onlineUsers.has(p.id) ? 'text-emerald-500' : 'text-white/20'}`}>
+                              <p className={`text-[10px] font-bold uppercase tracking-widest ${onlineUsers.has(p.id) ? 'text-emerald-500' : 'text-amber-400/80'}`}>
                                 {onlineUsers.has(p.id) ? 'Online' : formatLastSeen(p.last_seen)}
                               </p>
                             </div>

@@ -738,9 +738,9 @@ async function fetchMessages() {
   onClick={() => router.push(`/profile/${initialContact.id}`)}
 >
                   <h3 className="text-sm font-black italic tracking-tighter uppercase text-white hover:text-indigo-400 transition-colors">{initialContact.username}</h3>
-                  <p className={`text-[8px] font-bold uppercase tracking-widest ${partnerPresence.isOnline ? 'text-emerald-500' : 'text-white/20'}`}>
-                    {partnerPresence.isOnline ? 'Online' : formatLastSeen(initialContact.last_seen)}
-                  </p>
+                    <p className={`text-[8px] font-bold uppercase tracking-widest ${partnerPresence.isOnline ? 'text-emerald-500' : 'text-amber-400/80'}`}>
+                      {partnerPresence.isOnline ? 'Online' : formatLastSeen(initialContact.last_seen)}
+                    </p>
                 </div>
       </div>
       <div className="flex items-center gap-2">
